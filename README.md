@@ -12,7 +12,14 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 - 🌱 Continuously learning and experimenting with new technologies to expand my skill set.
 
 ---
+## 📊 GitHub Stats
 
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
+![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
+![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=aminebenjebli&theme=radical)
+
+---
 ## 🛠 Skills & Tools
 
 ### 🌐 Languages:
@@ -25,6 +32,9 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
+![Twig](https://img.shields.io/badge/-Twig-339933?style=flat&logo=twig&logoColor=white)
 
 ---
 
@@ -45,6 +55,12 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![Android](https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=android)
 ![iOS](https://img.shields.io/badge/-iOS-000000?style=flat&logo=apple)
 ![Expo](https://img.shields.io/badge/-Expo-000020?style=flat&logo=expo)
+
+---
+
+- **Frameworks**:  
+  ![Symfony](https://img.shields.io/badge/-Symfony-000000?style=flat&logo=symfony)  
+  ![FlutterFlow](https://img.shields.io/badge/-FlutterFlow-02569B?style=flat&logo=flutter)
 
 ---
 
@@ -86,21 +102,8 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   ![Jira](https://img.shields.io/badge/-Jira-0052CC?style=flat&logo=jira)  
   ![Trello](https://img.shields.io/badge/-Trello-0079BF?style=flat&logo=trello)  
   ![Notion](https://img.shields.io/badge/-Notion-000000?style=flat&logo=notion)
+  ![Mural](https://img.shields.io/badge/-Mural-FF3366?style=flat&logo=mural&logoColor=white)
 
----
-
-### 💻 Platforms
-- Cross-Platform: **React Native**, **Flutter**
-- Native Development: **Swift**, **Kotlin**
-
----
-
-## 📊 GitHub Stats
-
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
-![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
-![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=aminebenjebli&theme=radical)
 
 
 ---
