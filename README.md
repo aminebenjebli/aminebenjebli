@@ -92,6 +92,8 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=figma)  
   ![Adobe XD](https://img.shields.io/badge/-Adobe_XD-FF61F6?style=flat&logo=adobe-xd)  
   ![Photoshop](https://img.shields.io/badge/-Adobe_Photoshop-31A8FF?style=flat&logo=adobe-photoshop)
+  ![Canva](https://img.shields.io/badge/-Canva-00C4CC?style=flat&logo=canva&logoColor=white)
+
 
 - **API Tools**:  
   ![Swagger](https://img.shields.io/badge/-Swagger-85EA2D?style=flat&logo=swagger)  
