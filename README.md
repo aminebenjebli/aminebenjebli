@@ -34,12 +34,12 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 
 ## 📊 GitHub Stats
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=YourUsername&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YourUsername&layout=compact&theme=radical)
-![GitHub Streak Stats](https://streak-stats.demolab.com?user=YourUsername&theme=radical&hide_border=true)
-![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=YourUsername&theme=radical)
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
+![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
+![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=aminebenjebli&theme=radical)
 
-![Profile Views](https://komarev.com/ghpvc/?username=YourUsername&color=brightgreen)
+![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&color=brightgreen)
 
 ---
 
