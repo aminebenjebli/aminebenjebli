@@ -17,7 +17,6 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
 ![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
-![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=aminebenjebli&theme=radical)
 
 ---
 ## 🛠 Skills & Tools
