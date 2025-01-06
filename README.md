@@ -39,7 +39,6 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
 ![GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=aminebenjebli&theme=radical)
 
-![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&color=brightgreen)
 
 ---
 
