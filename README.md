@@ -8,7 +8,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 
 - 🎓 **Student Engineer** specializing in **Full-Stack Mobile Development** (Cross-Platform & Native).
 - 🔍 Currently exploring **AI/ML** and integrating it into innovative mobile apps.
-- 🎮 Passionate about **game development** and building immersive mobile gaming experiences.
+- 🎮 Aspiring **Game Developer** practicing and building small mobile games
 - 🌱 Continuously learning and experimenting with new technologies to expand my skill set.
 
 ---
