@@ -28,6 +28,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-C-00599C?style=flat&logo=c" height="30">
   <img src="https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B" height="30">
   <img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=java" height="30">
+  <img src="https://img.shields.io/badge/-JavaFX-007396?style=flat&logo=java&logoColor=white" height="30">
   <img src="https://img.shields.io/badge/-Kotlin-0095D5?style=flat&logo=kotlin" height="30">
   <img src="https://img.shields.io/badge/-Swift-FA7343?style=flat&logo=swift" height="30">
   <img src="https://img.shields.io/badge/-Objective_C-438EFF?style=flat&logo=apple" height="30" alt="Objective-C" style="margin-right: 8px;">
@@ -36,6 +37,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript" height="30">
   <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript" height="30">
   <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python" height="30">
+  
 </p>
 
 ---
@@ -49,6 +51,8 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5" height="30">
   <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" height="30">
   <img src="https://img.shields.io/badge/-Spring-6DB33F?style=flat&logo=spring&logoColor=white" height="30">
+  <img src="https://img.shields.io/badge/-Symfony-000000?style=flat&logo=symfony&logoColor=white" height="30">
+  <img src="https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white" height="30">
 </p>
 
 ---
@@ -60,6 +64,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
       <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react" height="30" alt="React Native" style="margin-right: 8px;">
       <img src="https://img.shields.io/badge/-Flutter-02569B?style=flat&logo=flutter" height="30" alt="Flutter" style="margin-right: 8px;">
       <img src="https://img.shields.io/badge/-Expo-000020?style=flat&logo=expo" height="30" alt="Expo">
+      <img src="https://img.shields.io/badge/-FlutterFlow-0175C2?style=flat&logo=flutter&logoColor=white" height="30">
     </p>
   </div>
   
@@ -81,6 +86,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql" height="30">
   <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb" height="30">
   <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase" height="30">
+  <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat&logo=oracle&logoColor=white" height="30">
 </p>
 
 ---
@@ -98,6 +104,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-Adobe_Photoshop-31A8FF?style=flat&logo=adobe-photoshop" height="30">
   <img src="https://img.shields.io/badge/-Canva-00C4CC?style=flat&logo=canva" height="30">
   <img src="https://img.shields.io/badge/-Lucidchart-FFCC00?style=flat&logo=lucidchart" height="30">
+  <img src="https://img.shields.io/badge/-Scene%20Builder-2C5BB4?style=flat&logo=globe&logoColor=white" height="30">
 </p>
 
 #### **API Tools**:
