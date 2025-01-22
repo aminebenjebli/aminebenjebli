@@ -35,8 +35,6 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript" height="30">
   <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python" height="30">
   <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" height="30">
-  <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5" height="30">
-  <img src="https://img.shields.io/badge/-Twig-339933?style=flat&logo=twig" height="30">
 </p>
 
 ---
@@ -50,6 +48,8 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js" height="30">
   <img src="https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express" height="30">
   <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel" height="30">
+  <img src="https://img.shields.io/badge/-Twig-339933?style=flat&logo=twig" height="30">
+  <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5" height="30">
 </p>
 
 ---
@@ -85,9 +85,9 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 #### **Design Tools**:
 <p>
   <img src="https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=figma" height="30">
-  <img src="https://img.shields.io/badge/-Adobe_XD-FF61F6?style=flat&logo=adobe-xd" height="30">
   <img src="https://img.shields.io/badge/-Adobe_Photoshop-31A8FF?style=flat&logo=adobe-photoshop" height="30">
   <img src="https://img.shields.io/badge/-Canva-00C4CC?style=flat&logo=canva" height="30">
+  <img src="https://img.shields.io/badge/-Lucidchart-FFCC00?style=flat&logo=lucidchart" height="30">
 </p>
 
 #### **API Tools**:
