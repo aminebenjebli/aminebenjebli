@@ -30,6 +30,8 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
   <img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=java" height="30">
   <img src="https://img.shields.io/badge/-Kotlin-0095D5?style=flat&logo=kotlin" height="30">
   <img src="https://img.shields.io/badge/-Swift-FA7343?style=flat&logo=swift" height="30">
+  <img src="https://img.shields.io/badge/-Objective_C-438EFF?style=flat&logo=apple" height="30" alt="Objective-C" style="margin-right: 8px;">
+  <img src="https://img.shields.io/badge/-Jetpack_Compose-4285F4?style=flat&logo=jetpackcompose" height="30" alt="Jetpack Compose">
   <img src="https://img.shields.io/badge/-Dart-0175C2?style=flat&logo=dart" height="30">
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript" height="30">
   <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript" height="30">
