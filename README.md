@@ -42,16 +42,13 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 
 ### 🖥️ Web Development:
 <p>
-  <img src="https://img.shields.io/badge/-Angular-DD0031?style=flat&logo=angular" height="30">
   <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react" height="30">
-  <img src="https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js" height="30">
   <img src="https://img.shields.io/badge/-NestJS-E0234E?style=flat&logo=nestjs" height="30">
   <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js" height="30">
-  <img src="https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express" height="30">
-  <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel" height="30">
   <img src="https://img.shields.io/badge/-Twig-339933?style=flat&logo=twig" height="30">
   <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5" height="30">
   <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" height="30">
+  <img src="https://img.shields.io/badge/-Spring-6DB33F?style=flat&logo=spring&logoColor=white" height="30">
 </p>
 
 ---
@@ -71,6 +68,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
     <p>
       <img src="https://img.shields.io/badge/-iOS_/_Swift-000000?style=flat&logo=apple" height="30" alt="iOS" style="margin-right: 8px;">
       <img src="https://img.shields.io/badge/-Android_/_Kotlin-3DDC84?style=flat&logo=android" height="30" alt="Android">
+      <img src="https://img.shields.io/badge/-UIKit-2396F3?style=flat&logo=apple" height="30">
     </p>
   </div>
 </div>
