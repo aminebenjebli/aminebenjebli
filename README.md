@@ -14,16 +14,16 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ---
 
 ## 📊 GitHub Stats
+![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&label=Profile%20Views&color=blue&style=flat)
+![GitHub Followers](https://img.shields.io/github/followers/aminebenjebli?label=Followers&style=social)
+![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
+
 
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
 ![Trophy](https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&row=1&column=7)
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=aminebenjebli&theme=redical)
 ![GitHub Stars](https://img.shields.io/github/stars/aminebenjebli?label=Total%20Stars&style=social)
-![GitHub Followers](https://img.shields.io/github/followers/aminebenjebli?label=Followers&style=social)
-![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&label=Profile%20Views&color=blue&style=flat)
 
-![GitHub Streak Stats](https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true)
 
 ---
 
