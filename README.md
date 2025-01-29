@@ -22,8 +22,6 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical)
 ![Trophy](https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&row=1&column=7)
-![GitHub Code Quality](https://img.shields.io/lgtm/grade/python/github/aminebenjebli?label=Code%20Quality&style=flat)
-![GitHub Code Coverage](https://img.shields.io/codecov/c/github/aminebenjebli?label=Code%20Coverage&style=flat)
 
 
 ---
