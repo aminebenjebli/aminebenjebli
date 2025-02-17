@@ -21,6 +21,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 
 [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+![Trophy](https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&row=1&column=7)
 
 
 ---
