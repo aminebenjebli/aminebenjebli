@@ -14,9 +14,70 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ---
 
 ## 📊 GitHub Stats
-![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&label=Profile%20Views&color=blue&style=flat)
-![GitHub Followers](https://img.shields.io/github/followers/aminebenjebli?label=Followers&style=social)
-![GitHub Stars](https://img.shields.io/github/stars/aminebenjebli?label=Total%20Stars&style=social)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .stat {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub Profile Statistics</h1>
+    <div class="container">
+        <div class="stat" id="followers">Followers: Loading...</div>
+        <div class="stat" id="stars">Total Stars: Loading...</div>
+    </div>
+
+    <script>
+        const username = "aminebenjebli";  // Replace with your GitHub username
+
+        async function fetchGitHubStats() {
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}`);
+                const data = await response.json();
+
+                document.getElementById("followers").innerText = `Followers: ${data.followers}`;
+            } catch (error) {
+                console.error("Error fetching GitHub data:", error);
+                document.getElementById("followers").innerText = "Followers: Error";
+            }
+
+            try {
+                const reposResponse = await fetch(`https://api.github.com/users/${username}/repos`);
+                const repos = await reposResponse.json();
+                let totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+
+                document.getElementById("stars").innerText = `Total Stars: ${totalStars}`;
+            } catch (error) {
+                console.error("Error fetching repositories:", error);
+                document.getElementById("stars").innerText = "Total Stars: Error";
+            }
+        }
+
+        fetchGitHubStats();
+    </script>
+
+</body>
+</html>
 
 
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)
