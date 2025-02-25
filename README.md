@@ -1,6 +1,6 @@
 # 👋 Welcome to My GitHub Profile!
 
-Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering student** passionate about **mobile development**, **AI**, and **game development**. 🚀
+Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering student** 🚀
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=FF0000&background=000000&center=true&vCenter=true&width=600&height=50&lines=Mobile+Full-Stack+Developer;Cross-Platform+%26+Native+Apps;Passionate+About+AI+%26+Innovation;Let's+Build+Something+Amazing!" alt="Typing Animation" />
 </p>
