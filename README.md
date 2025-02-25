@@ -1,7 +1,7 @@
 # 👋 Welcome to JOY_BOY GitHub Profile !
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=FF0000&background=FFFFFF00&center=true&vCenter=true&width=600&height=50&lines=Mobile+Full-Stack+Developer;Cross-Platform+%26+Native+Apps;Passionate+About+AI+%26+Innovation;Let's+Build+Something+Amazing!" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=151321&background=FFFFFF00&center=true&vCenter=true&width=600&height=50&lines=Mobile+Full-Stack+Developer;Cross-Platform+%26+Native+Apps;Passionate+About+AI+%26+Innovation;Let's+Build+Something+Amazing!" alt="Typing Animation" />
 </p>
 
 ## 🌟 About Me
