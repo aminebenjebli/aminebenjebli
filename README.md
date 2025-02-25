@@ -6,7 +6,7 @@
 
 ## 🌟 About Me
 
-- 🎓 **Student Engineer** specializing in **Full-Stack Mobile Development** (Cross-Platform & Native).
+- 🎓 **Student Engineer** specializing in **Full-Stack Mobile Development**
 - 🔍 Currently exploring **AI/ML** and integrating it into innovative mobile apps.
 - 🌱 Continuously learning and experimenting with new technologies to expand my skill set.
 ---
