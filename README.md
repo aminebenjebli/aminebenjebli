@@ -13,14 +13,25 @@
 
 ## 📊 GitHub Stats
 
-![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&label=Profile%20Views&color=blue&style=flat)
-![GitHub Followers](https://img.shields.io/github/followers/aminebenjebli?label=Followers&style=social)
-![GitHub Stars](https://img.shields.io/github/stars/aminebenjebli?label=Total%20Stars&style=social)
+<p align="center">
+  <!-- GitHub Streak Stats -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aminebenjebli&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
+</p>
 
-[![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-![Trophy](https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&row=1&column=7)
+<p align="center">
+  <!-- GitHub Readme Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="48%" />
+  <!-- Most Used Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" width="48%" />
+</p>
 
+---
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+</p>
 
 ---
 
