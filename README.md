@@ -35,14 +35,6 @@
 
 ---
 
-## 🕒 WakaTime Stats
-
-<p align="center">
-  <!-- WakaTime Stats -->
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&hide_border=true&layout=compact" alt="WakaTime Stats" />
-</p>
-
----
 ## 🛠 Skills & Tools
 
 ### 🌐 Languages:
