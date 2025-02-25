@@ -20,9 +20,9 @@
 
 <p align="center">
   <!-- GitHub Readme Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="40%" />
   <!-- Most Used Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" width="40%" />
 </p>
 
 ---
