@@ -16,6 +16,7 @@ Hi, I'm Mohamed Amine Ben Jebli 👨‍💻, a **Computer Science Engineering st
 ![Profile Views](https://komarev.com/ghpvc/?username=aminebenjebli&label=Profile%20Views&color=blue&style=flat)
 ![GitHub Followers](https://img.shields.io/github/followers/aminebenjebli?label=Followers&style=social)
 ![GitHub Stars](https://img.shields.io/github/stars/aminebenjebli?label=Total%20Stars&style=social)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
 
 [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
