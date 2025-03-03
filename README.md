@@ -15,7 +15,7 @@
 
 <p align="center">
   <!-- GitHub Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aminebenjebli&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
 </p>
 
 <p align="center">
@@ -23,6 +23,11 @@
   <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="40%" />
   <!-- Most Used Languages -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" width="40%" />
+</p>
+
+<!-- WakaTime Stats -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&hide_border=true" alt="WakaTime Stats" width="40%" />
 </p>
 
 ---
@@ -51,7 +56,6 @@
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript" height="30">
   <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript" height="30">
   <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python" height="30">
-  
 </p>
 
 ---
