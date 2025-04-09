@@ -16,18 +16,16 @@
 <p align="center">
   <!-- GitHub Streak Stats -->
   <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727" alt="GitHub Streak Stats" width="48%" />
-  
+
   <!-- GitHub Readme Stats -->
   <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="48%" />
 </p>
 
 <p align="center">
-  <!-- Most Used Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminebenjebli&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" width="48%" />
-  
   <!-- WakaTime Stats -->
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&hide_border=true" alt="WakaTime Stats" width="48%" />
 </p>
+
 
 ---
 
