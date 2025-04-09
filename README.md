@@ -27,7 +27,7 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&margin-w=15&margin-h=15&no-frame=true" alt="GitHub Trophies" width="80%" />
 </p>
----
+
 
 ## 🛠 Skills & Tools
 
