@@ -14,27 +14,19 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <!-- GitHub Streak Stats -->
-  <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727" alt="GitHub Streak Stats" width="48%" />
-
-  <!-- GitHub Readme Stats -->
+  <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727" alt="GitHub Streak" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="48%" />
 </p>
 
 <p align="center">
-  <!-- WakaTime Stats -->
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&hide_border=true" alt="WakaTime Stats" width="48%" />
 </p>
-
-
----
 
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&margin-w=15&margin-h=15&no-frame=true" alt="GitHub Trophies" width="80%" />
 </p>
-
 ---
 
 ## 🛠 Skills & Tools
