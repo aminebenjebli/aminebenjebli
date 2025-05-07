@@ -135,4 +135,4 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ben-jebli-amine)
 [![Email](https://img.shields.io/badge/-Email-red?style=flat&logo=gmail)](mailto:Mohamedamine.benjebli@esprit.tn)
 
-💡 _"Technology is not just my career choice—it's my playground to innovate, build, and create."_ 💻
+💡 _"Life is like github repository, nothing's is going to change if you don't commit."_ 💻
