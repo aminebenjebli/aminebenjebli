@@ -22,12 +22,6 @@
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&hide_border=true" alt="WakaTime Stats" width="48%" />
 </p>
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aminebenjebli&theme=radical&margin-w=15&margin-h=15&no-frame=true" alt="GitHub Trophies" width="80%" />
-</p>
-
 
 ## 🛠 Skills & Tools
 
