@@ -129,4 +129,9 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ben-jebli-amine)
 [![Email](https://img.shields.io/badge/-Email-red?style=flat&logo=gmail)](mailto:Mohamedamine.benjebli@esprit.tn)
 
+### 🎮 GitHub Snake Game
+<p align="center">
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</p>
+
 💡 _"Life is like github repository, nothing's is going to change if you don't commit."_ 💻
