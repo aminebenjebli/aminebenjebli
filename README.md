@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./Github_banner.png" alt="GitHub Banner" width="100%" style="border-radius: 30px;" />
+</p>
 <h1>
   <span>👋 Welcome to JOY_BOY GitHub World !</span>
   <span style="display: inline-block; width: 40px;"></span>
