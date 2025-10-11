@@ -7,7 +7,7 @@
   <img src="https://komarev.com/ghpvc/?username=aminebenjebli&style=for-the-badge&color=blue" alt="Profile Views">
 </h1>
 
-<p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=e59400&background=FFFFFF00&center=true&vCenter=true&width=650&height=60&lines=Mobile+Full-Stack+Developer;Cross-Platform+%26+Native+Apps;Passionate+About+AI+%26+Innovation;Let's+Build+Something+Amazing!" alt="Typing Animation" /> </p>
+<p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1500&color=e59400&background=FFFFFF00&center=true&vCenter=true&width=650&height=60&lines=Software+Engineer;Mobile+Full-Stack+Developer;Cross-Platform+%26+Native+Apps;Progressive+Web+Applications;Passionate+About+AI+%26+DEVOPS;Let's+Build+Something+Amazing!" alt="Typing Animation" /> </p>
 
 ## 🌟 About Me
 
