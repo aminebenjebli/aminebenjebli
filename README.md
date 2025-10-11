@@ -21,10 +21,8 @@
 <p align="center"> <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727&font-size=16" alt="GitHub Streak" width="48%" /> <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&font-size=16" alt="GitHub Stats" width="48%" /> </p>
 
 
-## 📊 Wakatime Stats
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&layout=compact&range=all_time&custom_title=Last%207%20days&v=2" alt="WakaTime Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&layout=compact&range=all_time&custom_title=WakaTime%20Stats%20(Last%20Year)" alt="WakaTime Stats" />
 </p>
 
 ---
