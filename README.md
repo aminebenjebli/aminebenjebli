@@ -22,7 +22,7 @@
 
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&layout=compact&range=all_time&custom_title=WakaTime%20Stats%20(Last%20Year)" alt="WakaTime Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&layout=compact&range=all_time&custom_title=WakaTime%20Stats%20(Last%207%20Days)" alt="WakaTime Stats" />
 </p>
 
 ---
