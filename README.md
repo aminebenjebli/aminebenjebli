@@ -25,10 +25,10 @@
 
 <p align="center">
   <a href="https://wakatime.com/@aminebenjebli">
-      <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages" height="500" width="500" />
+      <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages"  width="48%" />
   </a>
   <a href="https://wakatime.com/@aminebenjebli">
-      <img src="https://wakatime.com/share/@aminebenjebli/742b213f-8482-48d4-89ef-3672caf9491c.svg" alt="WakaTime Editors" height="500" width="500" />
+      <img src="https://wakatime.com/share/@aminebenjebli/742b213f-8482-48d4-89ef-3672caf9491c.svg" alt="WakaTime Editors"  width="48%" />
     </a>
 </p>
 
