@@ -19,7 +19,6 @@
 ## 📊 GitHub Stats 
 <p align="center"> 
   <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727&font-size=16" alt="GitHub Streak" width="48%" /> 
-  <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&font-size=16" alt="GitHub Stats" width="48%" /> 
 </p>
 
 ## ⏱️ WakaTime & Activity
@@ -29,7 +28,7 @@
       <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages" height="500" width="500" />
   </a>
   <a href="https://wakatime.com/@aminebenjebli">
-      <img src="https://wakatime.com/share/@aminebenjebli/9fecefa4-e6fa-4069-bb6f-79b35cf43827.svg" alt="WakaTime Editors" height="500" width="500" />
+      <img src="https://wakatime.com/share/@aminebenjebli/742b213f-8482-48d4-89ef-3672caf9491c.svg" alt="WakaTime Editors" height="500" width="500" />
     </a>
 </p>
 
