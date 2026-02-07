@@ -28,7 +28,9 @@
   <a href="https://wakatime.com/@aminebenjebli">
       <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages" height="500" width="500" />
   </a>
+  <a href="https://wakatime.com/@aminebenjebli">
       <img src="https://wakatime.com/share/@aminebenjebli/9fecefa4-e6fa-4069-bb6f-79b35cf43827.svg" alt="WakaTime Editors" height="500" width="500" />
+    </a>
 </p>
 
 ## 📈 Contribution Graph
