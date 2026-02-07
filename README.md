@@ -17,12 +17,24 @@
 ---
 
 ## 📊 GitHub Stats 
+<p align="center"> 
+  <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727&font-size=16" alt="GitHub Streak" width="48%" /> 
+  <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&font-size=16" alt="GitHub Stats" width="48%" /> 
+</p>
 
-<p align="center"> <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=radical&hide_border=true&fire=DD2727&ring=DD2727&currStreakLabel=DD2727&font-size=16" alt="GitHub Streak" width="48%" /> <img src="https://github-readme-stats.vercel.app/api?username=aminebenjebli&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&font-size=16" alt="GitHub Stats" width="48%" /> </p>
-
+## ⏱️ WakaTime & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aminebenjebli&theme=radical&layout=compact&range=all_time&custom_title=WakaTime%20Stats%20(Last%207%20Days)" alt="WakaTime Stats" />
+  <a href="https://wakatime.com/@aminebenjebli">
+      <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages" height="500" width="500" />
+  </a>
+      <img src="https://wakatime.com/share/@aminebenjebli/9fecefa4-e6fa-4069-bb6f-79b35cf43827.svg" alt="WakaTime Editors" height="500" width="500" />
+</p>
+
+## 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aminebenjebli&theme=react-dark&hide_border=true&area=true" alt="Contribution Graph" />
 </p>
 
 ---
@@ -35,21 +47,16 @@
 
 ### 🖥️ Web Development:
 <p align="center">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="28">
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" height="28">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" height="28">
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" height="28">
   <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" height="28">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" height="28">
-  <img src="https://img.shields.io/badge/Shadcn-000000?style=for-the-badge&logo=shadcnui&logoColor=white" height="28">
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" height="28">
 </p>
 
 ---
 
 ### 📱 Mobile Development:
 <p align center > <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="28"> <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="28"></p>
-<p align="center"> <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" height="28"> <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="28"> <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Flutter_Flow-02569B?style=for-the-badge&logo=flutter&logoColor=white" height="28"> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" height="28"> <img src="https://img.shields.io/badge/Flutter_Flow-02569B?style=for-the-badge&logo=flutter&logoColor=white" height="28"> </p>
 
 ---
 
