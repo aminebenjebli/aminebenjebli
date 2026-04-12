@@ -25,7 +25,7 @@
 
 <p align="center">
   <a href="https://wakatime.com/@aminebenjebli">
-      <img src="https://wakatime.com/share/@aminebenjebli/a422a844-8d83-4cef-b6f9-d6e21e215624.svg" alt="WakaTime Languages"  width="48%" />
+      <img src="https://wakatime.com/share/@aminebenjebli/c5e1e01d-93c8-489d-9ade-6f2bc50de6a2.svg" alt="WakaTime Languages"  width="48%" />
   </a>
   <a href="https://wakatime.com/@aminebenjebli">
       <img src="https://wakatime.com/share/@aminebenjebli/742b213f-8482-48d4-89ef-3672caf9491c.svg" alt="WakaTime Editors"  width="48%" />
