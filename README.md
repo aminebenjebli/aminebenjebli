@@ -141,13 +141,9 @@ status    : Open to opportunities ✅
 
 ## `> ./bj_identity`
 
-<div align="center">
-
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
-
-</div>
-
-<div align="center">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aminebenjebli/aminebenjebli/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+</p>
 
 
 <div align="center">
