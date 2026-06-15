@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="840" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04101E"/>
+      <stop offset="100%" stop-color="#0A1929"/>
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="50%" stop-color="#378ADD"/>
+      <stop offset="100%" stop-color="#185FA5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="termClip">
+      <rect x="12" y="42" width="816" height="266" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect x="2" y="2" width="836" height="316" rx="12" fill="url(#bgGrad)" stroke="url(#borderGlow)" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" fill="freeze"/>
+  </rect>
+
+  <!-- Title bar -->
+  <rect x="2" y="2" width="836" height="38" rx="12" fill="#0C1A2E"/>
+  <rect x="2" y="28" width="836" height="12" fill="#0C1A2E"/>
+  
+  <!-- Window buttons -->
+  <circle cx="26" cy="20" r="6.5" fill="#FF5F57" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.3s" begin="0.3s" fill="freeze"/>
+  </circle>
+  <circle cx="48" cy="20" r="6.5" fill="#FEBC2E" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.3s" begin="0.45s" fill="freeze"/>
+  </circle>
+  <circle cx="70" cy="20" r="6.5" fill="#28C840" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.3s" begin="0.6s" fill="freeze"/>
+  </circle>
+
+  <!-- Title text -->
+  <text x="420" y="24" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A7A9B" opacity="0">
+    aminebenjebli — bash — 80×24
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.5s" fill="freeze"/>
+  </text>
+
+  <g clip-path="url(#termClip)">
+    <!-- Line 1: prompt + whoami -->
+    <text x="28" y="72" font-family="monospace" font-size="14" opacity="0">
+      <tspan fill="#1D9E75">❯</tspan><tspan fill="#4A7A9B"> ~/aminebenjebli</tspan><tspan fill="#85B7EB"> $ </tspan><tspan fill="#E8F4FD">whoami</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.8s" fill="freeze"/>
+    </text>
+
+    <!-- Line 2: name output -->
+    <text x="28" y="100" font-family="monospace" font-size="15" font-weight="bold" fill="#378ADD" filter="url(#glow)" opacity="0">
+      Amine Ben Jebli
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.4s" fill="freeze"/>
+    </text>
+
+    <!-- Line 3: role -->
+    <text x="28" y="126" font-family="monospace" font-size="13" opacity="0">
+      <tspan fill="#4A7A9B">role:</tspan><tspan fill="#85B7EB">  Mobile Full-Stack Engineer</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.8s" fill="freeze"/>
+    </text>
+
+    <!-- Line 4: focus -->
+    <text x="28" y="150" font-family="monospace" font-size="13" opacity="0">
+      <tspan fill="#4A7A9B">focus:</tspan><tspan fill="#85B7EB"> Cross-Platform · Android/iOS · DevOps · AI</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.1s" fill="freeze"/>
+    </text>
+
+    <!-- Line 5: location -->
+    <text x="28" y="174" font-family="monospace" font-size="13" opacity="0">
+      <tspan fill="#4A7A9B">loc:</tspan><tspan fill="#85B7EB">   Tunisia 🇹🇳  ·  Open to Opportunities ✅</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.4s" fill="freeze"/>
+    </text>
+
+    <!-- Divider line -->
+    <line x1="28" y1="190" x2="28" y2="190" stroke="#185FA5" stroke-width="0.5" opacity="0.5">
+      <animate attributeName="x2" from="28" to="812" dur="0.6s" begin="2.7s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="0.5" dur="0.3s" begin="2.7s" fill="freeze"/>
+    </line>
+
+    <!-- Pipeline line -->
+    <text x="28" y="216" font-family="monospace" font-size="13" opacity="0">
+      <tspan fill="#1D9E75">❯</tspan><tspan fill="#85B7EB"> $ </tspan><tspan fill="#E8F4FD">cat pipeline.sh</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.0s" fill="freeze"/>
+    </text>
+
+    <!-- Pipeline visualization -->
+    <text x="28" y="244" font-family="monospace" font-size="12" opacity="0">
+      <tspan fill="#4A7A9B">  Idea</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#4A7A9B">Design</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#4A7A9B">Code</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#4A7A9B">Test</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#4A7A9B">Docker</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#4A7A9B">CI/CD</tspan><tspan fill="#185FA5"> → </tspan><tspan fill="#1D9E75">Deploy ✔</tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="3.4s" fill="freeze"/>
+    </text>
+
+    <!-- Quote -->
+    <text x="28" y="280" font-family="monospace" font-size="12" fill="#4A7A9B" font-style="italic" opacity="0">
+      "Nothing ships if you don't commit."
+      <animate attributeName="opacity" from="0" to="0.7" dur="0.8s" begin="4.0s" fill="freeze"/>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="300" y="268" width="8" height="15" fill="#378ADD" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0" dur="5.2s" keyTimes="0;0.76;0.77;0.96;1" repeatCount="1" fill="freeze"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1s" begin="5.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Scanning line effect -->
+  <rect x="12" y="42" width="816" height="2" fill="#378ADD" opacity="0">
+    <animate attributeName="opacity" values="0;0.15;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="y" from="42" to="308" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

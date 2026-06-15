@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 200" width="840" height="200">
+  <defs>
+    <linearGradient id="aBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04101E"/>
+      <stop offset="100%" stop-color="#081524"/>
+    </linearGradient>
+    <linearGradient id="barG1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#378ADD"/>
+    </linearGradient>
+    <linearGradient id="barG2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#185FA5"/>
+    </linearGradient>
+    <filter id="bg">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="840" height="200" fill="url(#aBg)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="420" y="28" text-anchor="middle" font-family="monospace" font-size="11" fill="#4A7A9B">
+    <tspan fill="#1D9E75">❯</tspan> weekly commit frequency
+  </text>
+
+  <!-- Grid lines -->
+  <line x1="60" y1="50" x2="60" y2="170" stroke="#0C447C" stroke-width="0.3" opacity="0.4"/>
+  <line x1="60" y1="170" x2="780" y2="170" stroke="#0C447C" stroke-width="0.3" opacity="0.4"/>
+  <line x1="60" y1="130" x2="780" y2="130" stroke="#0C447C" stroke-width="0.2" opacity="0.2" stroke-dasharray="4 4"/>
+  <line x1="60" y1="90" x2="780" y2="90" stroke="#0C447C" stroke-width="0.2" opacity="0.2" stroke-dasharray="4 4"/>
+
+  <!-- Animated bars -->
+  <rect x="90" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="65" dur="0.6s" begin="0.2s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="105" dur="0.6s" begin="0.2s" fill="freeze"/>
+  </rect>
+  <rect x="160" y="170" width="30" height="0" rx="3" fill="url(#barG2)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="90" dur="0.6s" begin="0.4s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="80" dur="0.6s" begin="0.4s" fill="freeze"/>
+  </rect>
+  <rect x="230" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="45" dur="0.6s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="125" dur="0.6s" begin="0.6s" fill="freeze"/>
+  </rect>
+  <rect x="300" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="110" dur="0.6s" begin="0.8s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="60" dur="0.6s" begin="0.8s" fill="freeze"/>
+  </rect>
+  <rect x="370" y="170" width="30" height="0" rx="3" fill="url(#barG2)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="78" dur="0.6s" begin="1.0s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="92" dur="0.6s" begin="1.0s" fill="freeze"/>
+  </rect>
+  <rect x="440" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="55" dur="0.6s" begin="1.2s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="115" dur="0.6s" begin="1.2s" fill="freeze"/>
+  </rect>
+  <rect x="510" y="170" width="30" height="0" rx="3" fill="url(#barG2)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="98" dur="0.6s" begin="1.4s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="72" dur="0.6s" begin="1.4s" fill="freeze"/>
+  </rect>
+  <rect x="580" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="82" dur="0.6s" begin="1.6s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="88" dur="0.6s" begin="1.6s" fill="freeze"/>
+  </rect>
+  <rect x="650" y="170" width="30" height="0" rx="3" fill="url(#barG1)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="70" dur="0.6s" begin="1.8s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="100" dur="0.6s" begin="1.8s" fill="freeze"/>
+  </rect>
+  <rect x="720" y="170" width="30" height="0" rx="3" fill="url(#barG2)" filter="url(#bg)">
+    <animate attributeName="height" from="0" to="105" dur="0.6s" begin="2.0s" fill="freeze"/>
+    <animate attributeName="y" from="170" to="65" dur="0.6s" begin="2.0s" fill="freeze"/>
+  </rect>
+
+  <!-- Day labels -->
+  <text x="105" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Mon<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="0.8s" fill="freeze"/></text>
+  <text x="175" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Tue<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="1.0s" fill="freeze"/></text>
+  <text x="245" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Wed<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="1.2s" fill="freeze"/></text>
+  <text x="315" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Thu<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="1.4s" fill="freeze"/></text>
+  <text x="385" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Fri<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="1.6s" fill="freeze"/></text>
+  <text x="455" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Sat<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="1.8s" fill="freeze"/></text>
+  <text x="525" y="188" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A7A9B" opacity="0">
+    Sun<animate attributeName="opacity" from="0" to="0.7" dur="0.3s" begin="2.0s" fill="freeze"/></text>
+
+  <!-- Sparkle particles -->
+  <circle r="2" fill="#378ADD" opacity="0">
+    <animateMotion path="M315,60 Q330,30 345,60" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="1.5" fill="#85B7EB" opacity="0">
+    <animateMotion path="M525,72 Q540,42 555,72" dur="2.5s" begin="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="2.5s" begin="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="1.5" fill="#1D9E75" opacity="0">
+    <animateMotion path="M735,65 Q750,35 765,65" dur="2.2s" begin="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="2.2s" begin="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
