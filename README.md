@@ -149,6 +149,16 @@
 
 <br/>
 
+<table width="100%" align="center">
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=dark&hide_border=true&background=04101E&fire=378ADD&ring=185FA5&currStreakLabel=85B7EB&sideLabels=85B7EB&currStreakNum=E8F4FD&sideNums=E8F4FD&dates=4A7A9B" alt="GitHub Streak" />
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=aminebenjebli&theme=react-dark&bg_color=04101e&color=378ADD&line=185FA5&point=85B7EB&area=true&hide_border=true&radius=8" alt="Contribution Graph" />
 </div>
