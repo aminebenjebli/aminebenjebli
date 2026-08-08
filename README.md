@@ -164,6 +164,10 @@
 </div>
 
 <br/>
+<div align="center">
+  <img src="https://wakatime.com/share/@aminebenjebli/31c26212-11c7-4505-8305-8c3a4ee4a0b6.svg?transparent=true" width="80%" alt="WakaTime Coding Activity" />
+</div>
+<br/>
 
 <div align="center">
 <img src="./assets/divider-animated.svg" width="100%" alt="divider"/>
