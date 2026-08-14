@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0C447C,042C53,185FA5&height=200&section=header&text=Amine%20Ben%20Jebli&fontSize=52&fontColor=E8F4FD&fontAlignY=38&desc=Mobile%20Engineer%20%C3%97%20DevOps%20%C3%97%20AI%20Builder&descAlignY=58&descColor=85B7EB&descSize=18&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0C447C,042C53,185FA5&height=200&section=header&text=Amine%20Ben%20Jebli&fontSize=52&fontColor=E8F4FD&fontAlignY=38&desc=Software%20Engineer%20%C3%97%20Systems%20Architect%20%C3%97%20AI%20Builder&descAlignY=58&descColor=85B7EB&descSize=18&animation=fadeIn" />
 
 <br/>
 
@@ -197,13 +197,6 @@
 
 <br/>
 
-## `> ./bj_identity`
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/aminebenjebli/aminebenjebli/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
-</p>
-
-<br/>
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=042C53,0C447C,185FA5&height=120&section=footer&text=%22Nothing%20ships%20if%20you%20don't%20commit.%22&fontSize=16&fontColor=85B7EB&fontAlignY=65&animation=fadeIn" alt="Footer" />
