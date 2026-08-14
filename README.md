@@ -143,11 +143,7 @@
 
 ## `> git log --oneline --graph`
 
-<div align="center">
-<img src="./assets/activity-chart.svg" width="100%" alt="Activity Chart Animation"/>
-</div>
 
-<br/>
 
 <table width="100%" align="center">
   <tr>
