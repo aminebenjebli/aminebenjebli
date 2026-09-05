@@ -120,11 +120,6 @@ I own features from the first wireframe to production, with a strong focus on cl
   <img src="https://streak-stats.demolab.com?user=aminebenjebli&theme=dark&hide_border=true&background=04101E&fire=378ADD&ring=185FA5&currStreakLabel=85B7EB&sideLabels=85B7EB&currStreakNum=E8F4FD&sideNums=E8F4FD&dates=4A7A9B" height="165" alt="GitHub Streak" />
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/185FA5/aminebenjebli" width="100%" alt="Contribution Calendar" />
-</div>
 
 <br/>
 
@@ -132,6 +127,12 @@ I own features from the first wireframe to production, with a strong focus on cl
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aminebenjebli&theme=nightowl" height="165" alt="Top Languages" />
   &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aminebenjebli&theme=nightowl" height="165" alt="Most Committed Languages" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/185FA5/aminebenjebli" width="100%" alt="Contribution Calendar" />
 </div>
 
 <br/>
