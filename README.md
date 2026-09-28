@@ -2,11 +2,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=042C53,0C447C,185FA5&height=210&section=header&text=Amine%20Ben%20Jebli&fontSize=54&fontColor=E8F4FD&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20System%20Design%20%C2%B7%20Architecture&descAlignY=58&descColor=85B7EB&descSize=18&animation=fadeIn" alt="Amine Ben Jebli" />
 
-<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/Software%20Engineer-Spark%20Talent%20Alliance-185FA5?style=for-the-badge&labelColor=042C53" alt="Spark Talent Alliance" /></a>
-&nbsp;
-<img src="https://img.shields.io/badge/Focus-Mobile%20%26%20Web%20SaaS-378ADD?style=for-the-badge&labelColor=042C53" alt="Focus" />
-&nbsp;
-<img src="https://img.shields.io/badge/Based%20in-Tunisia 🇹🇳-0C447C?style=for-the-badge&labelColor=042C53" alt="Tunisia" />
+<div align="center">
+
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/role-software%20engineer-185FA5?style=flat-square&labelColor=042C53" alt="Role" /></a>
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/@-spark%20talent%20alliance-0C447C?style=flat-square&labelColor=042C53" alt="Company" /></a>
+<img src="https://img.shields.io/badge/focus-mobile%20%26%20web%20saas-378ADD?style=flat-square&logo=flutter&logoColor=E8F4FD&labelColor=042C53" alt="Focus" />
+<img src="https://img.shields.io/badge/based-tunisia-185FA5?style=flat-square&labelColor=042C53" alt="Location" />
+
+</div>
 
 <br/><br/>
 
