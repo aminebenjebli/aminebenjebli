@@ -13,7 +13,7 @@
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1200&color=378ADD&background=00000000&center=true&vCenter=true&width=720&height=50&lines=Building+a+Mobile+%26+Web+SaaS+platform+end+to+end;Flutter+%C2%B7+Kotlin+%C2%B7+Swift+%C2%B7+Next.js+%C2%B7+NestJS;Docker+%C2%B7+GitHub+Actions+%C2%B7+CI%2FCD+that+ships;Design+%E2%86%92+Build+%E2%86%92+Deploy+%E2%86%92+Monitor" alt="Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1200&color=185FA5&background=00000000&center=true&vCenter=true&width=780&height=50&lines=Architecting+multi-platform+SaaS+end+to+end;System+design+%C2%B7+Clean+architecture+%C2%B7+Scalability;DevOps+%C2%B7+CI%2FCD+%C2%B7+Automation+that+ships+itself;Design+%E2%86%92+Architect+%E2%86%92+Build+%E2%86%92+Ship+%E2%86%92+Monitor" alt="Typing" />
 
 </div>
 
