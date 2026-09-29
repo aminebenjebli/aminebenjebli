@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
+<defs><linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2546" stop-opacity="0.9"/><stop offset="1" stop-color="#081A33" stop-opacity="0.9"/></linearGradient></defs>
+<rect x="32.0" y="4" width="266.0" height="190" rx="14" fill="url(#cardG)" stroke="#16365F" stroke-width="1"/>
+<rect x="52.0" y="24" width="40" height="40" rx="10" fill="#22D3EE" fill-opacity="0.12" stroke="#22D3EE" stroke-opacity="0.4"/>
+<rect x="63.0" y="30.0" width="18" height="28" rx="4" fill="none" stroke="#22D3EE" stroke-width="2"/><circle cx="72.0" cy="53.0" r="1.6" fill="#22D3EE"/>
+<text x="52.0" y="92" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#E8F4FD">Mobile SaaS</text>
+<text x="52.0" y="116" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">Cross-platform and native apps</text>
+<text x="52.0" y="134" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">with offline-first data, secure</text>
+<text x="52.0" y="152" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">auth and clean modular</text>
+<text x="52.0" y="170" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">architecture.</text>
+<rect x="322.0" y="4" width="266.0" height="190" rx="14" fill="url(#cardG)" stroke="#16365F" stroke-width="1"/>
+<rect x="342.0" y="24" width="40" height="40" rx="10" fill="#378ADD" fill-opacity="0.12" stroke="#378ADD" stroke-opacity="0.4"/>
+<rect x="348.0" y="33.0" width="28" height="22" rx="4" fill="none" stroke="#378ADD" stroke-width="2"/><line x1="348.0" y1="40.0" x2="376.0" y2="40.0" stroke="#378ADD" stroke-width="2"/>
+<text x="342.0" y="92" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#E8F4FD">Web Platform</text>
+<text x="342.0" y="116" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">Next.js dashboards and client</text>
+<text x="342.0" y="134" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">portals backed by typed NestJS</text>
+<text x="342.0" y="152" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">APIs and a shared design system.</text>
+<rect x="612.0" y="4" width="266.0" height="190" rx="14" fill="url(#cardG)" stroke="#16365F" stroke-width="1"/>
+<rect x="632.0" y="24" width="40" height="40" rx="10" fill="#85B7EB" fill-opacity="0.12" stroke="#85B7EB" stroke-opacity="0.4"/>
+<circle cx="652.0" cy="44.0" r="13" fill="none" stroke="#85B7EB" stroke-width="2.5" stroke-dasharray="6 5"/><circle cx="652.0" cy="44.0" r="2.4" fill="#85B7EB"/>
+<text x="632.0" y="92" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#E8F4FD">DevOps & Delivery</text>
+<text x="632.0" y="116" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">Docker, GitHub Actions and</text>
+<text x="632.0" y="134" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">environment-based pipelines:</text>
+<text x="632.0" y="152" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">every merge is tested, built and</text>
+<text x="632.0" y="170" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">deployable.</text>
+<rect x="902.0" y="4" width="266.0" height="190" rx="14" fill="url(#cardG)" stroke="#16365F" stroke-width="1"/>
+<rect x="922.0" y="24" width="40" height="40" rx="10" fill="#FFD84D" fill-opacity="0.12" stroke="#FFD84D" stroke-opacity="0.4"/>
+<path d="M 942.0,31.0 L 945.5,40.5 L 955.0,44.0 L 945.5,47.5 L 942.0,57.0 L 938.5,47.5 L 929.0,44.0 L 938.5,40.5 Z" fill="#FFD84D"/>
+<text x="922.0" y="92" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#E8F4FD">AI Features</text>
+<text x="922.0" y="116" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">ML and LLM-powered capabilities</text>
+<text x="922.0" y="134" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">integrated into product flows,</text>
+<text x="922.0" y="152" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="500" fill="#8FAECF">from prototype to production.</text>
+</svg>

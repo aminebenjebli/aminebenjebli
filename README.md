@@ -16,10 +16,6 @@
 
 </div>
 
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1200&color=185FA5&background=00000000&center=true&vCenter=true&width=780&height=50&lines=Architecting+multi-platform+SaaS+end+to+end;System+design+%C2%B7+Clean+architecture+%C2%B7+Scalability;DevOps+%C2%B7+CI%2FCD+%C2%B7+Automation+that+ships+itself;Design+%E2%86%92+Architect+%E2%86%92+Build+%E2%86%92+Ship+%E2%86%92+Monitor" alt="Typing" />
-
 </div>
 
 <br/>
@@ -36,35 +32,18 @@ Software Engineer at **[Spark Talent Alliance](https://sparktalentalliance.com)*
 
 I own features from the first wireframe to production, with a strong focus on clean architecture, developer experience and reliable releases.
 
-- **Mobile** — Flutter for cross-platform, Kotlin and Swift for native Android / iOS
-- **Web & Backend** — Next.js front ends, NestJS APIs, PostgreSQL / MongoDB
-- **DevOps** — Dockerized services, GitHub Actions CI/CD, Firebase, automated releases
-- **AI integration** — bringing ML and LLM features into mobile and web products
+<table>
+<tr><td width="170"><b>Mobile</b></td><td>Flutter for cross-platform, Kotlin and Swift for native Android / iOS</td></tr>
+<tr><td><b>Web & Backend</b></td><td>Next.js front ends, NestJS APIs, PostgreSQL / MongoDB</td></tr>
+<tr><td><b>DevOps</b></td><td>Dockerized services, GitHub Actions CI/CD, Firebase, automated releases</td></tr>
+<tr><td><b>AI integration</b></td><td>Bringing ML and LLM features into mobile and web products</td></tr>
+</table>
 
 <br/>
 
 ## What I'm building &nbsp;<sub><code>$ cat current-focus.md</code></sub>
 
-<table>
-  <tr>
-    <td width="25%" valign="top">
-      <b>📱 Mobile SaaS</b><br/><br/>
-      Cross-platform and native apps with offline-first data, secure auth and clean modular architecture.
-    </td>
-    <td width="25%" valign="top">
-      <b>🌐 Web Platform</b><br/><br/>
-      Next.js dashboards and client portals backed by typed NestJS APIs and a shared design system.
-    </td>
-    <td width="25%" valign="top">
-      <b>⚙️ DevOps & Delivery</b><br/><br/>
-      Docker, GitHub Actions and environment-based pipelines: every merge is tested, built and deployable.
-    </td>
-    <td width="25%" valign="top">
-      <b>🤖 AI Features</b><br/><br/>
-      ML and LLM-powered capabilities integrated into product flows, from prototype to production.
-    </td>
-  </tr>
-</table>
+<img src="./assets/focus-cards.svg" width="100%" alt="Mobile SaaS, Web Platform, DevOps & Delivery, AI Features" />
 
 <br/>
 
