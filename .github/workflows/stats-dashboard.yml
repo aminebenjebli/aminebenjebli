@@ -1,0 +1,29 @@
+name: GitHub stats dashboard
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node github-stats/generate.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          GH_USER: aminebenjebli
+          UTC_OFFSET: 1
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add github-stats/dashboard.svg
+          git diff --staged --quiet || git commit -m "chore: update stats dashboard"
+          git push
