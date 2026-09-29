@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=042C53,0C447C,185FA5&height=210&section=header&text=Amine%20Ben%20Jebli&fontSize=54&fontColor=E8F4FD&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20System%20Design%20%C2%B7%20Architecture&descAlignY=58&descColor=85B7EB&descSize=18&animation=fadeIn" alt="Amine Ben Jebli" />
+<img src="./assets/hero.svg" width="100%" alt="Amine Ben Jebli — Software Engineer at Spark Talent Alliance" />
 
 <div align="center">
 
