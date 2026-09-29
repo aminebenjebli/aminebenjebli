@@ -2,12 +2,17 @@
 
 <img src="./assets/hero.svg" width="100%" alt="Amine Ben Jebli — Software Engineer at Spark Talent Alliance" />
 
+<br/><br/>
+
 <div align="center">
 
-<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/role-software%20engineer-185FA5?style=flat-square&labelColor=042C53" alt="Role" /></a>
-<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/@-spark%20talent%20alliance-0C447C?style=flat-square&labelColor=042C53" alt="Company" /></a>
-<img src="https://img.shields.io/badge/focus-mobile%20%26%20web%20saas-378ADD?style=flat-square&logo=flutter&logoColor=E8F4FD&labelColor=042C53" alt="Focus" />
-<img src="https://img.shields.io/badge/based-tunisia-185FA5?style=flat-square&labelColor=042C53" alt="Location" />
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/role-software%20engineer-185FA5?style=for-the-badge&labelColor=042C53" alt="Role" /></a>
+&nbsp;&nbsp;
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/@-spark%20talent%20alliance-0C447C?style=for-the-badge&labelColor=042C53" alt="Company" /></a>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/focus-mobile%20%26%20web%20saas-378ADD?style=for-the-badge&logo=flutter&logoColor=E8F4FD&labelColor=042C53" alt="Focus" />
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/based-tunisia-185FA5?style=for-the-badge&labelColor=042C53" alt="Location" />
 
 </div>
 
