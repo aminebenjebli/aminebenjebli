@@ -134,12 +134,14 @@ function computeStreaks(days) {
   }
 
   // current streak: walk backward from the end; a zero-count *today* doesn't
-  // break it (the day may not be over yet in the profile's timezone).
+  // break it (the day may not be over yet in the profile's timezone), but it
+  // also isn't counted as part of the streak until it actually has activity.
   const todayKey = toDateKey(localDate(new Date().toISOString()));
-  let current = 0, currentStart = null;
+  let current = 0, currentStart = null, currentEnd = null;
   for (let i = days.length - 1; i >= 0; i--) {
     const { date, count } = days[i];
     if (count > 0) {
+      if (currentEnd === null) currentEnd = date; // most recent day with activity
       current++;
       currentStart = date;
     } else if (date === todayKey) {
@@ -148,7 +150,6 @@ function computeStreaks(days) {
       break;
     }
   }
-  const currentEnd = current > 0 ? (days[days.length - 1].date) : null;
 
   return {
     longest,
