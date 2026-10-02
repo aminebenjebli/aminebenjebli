@@ -162,29 +162,40 @@ function computeStreaks(days) {
 // ---------- 3. commits by hour ----------
 async function getCommitHours(viewerId, repoNames) {
   const hours = new Array(24).fill(0);
+  const PAGE = 100;
+  const MAX_PER_REPO = 500; // safety cap so one huge repo can't blow the run time/rate limit
   for (const nameWithOwner of repoNames) {
     const [owner, name] = nameWithOwner.split('/');
+    let cursor = null;
+    let fetched = 0;
     try {
-      const data = await gql(
-        `query($owner:String!, $name:String!, $authorId:ID){
-          repository(owner:$owner, name:$name){
-            defaultBranchRef{
-              target{
-                ... on Commit{
-                  history(first:100, author:{id:$authorId}){
-                    nodes{ committedDate }
+      while (fetched < MAX_PER_REPO) {
+        const data = await gql(
+          `query($owner:String!, $name:String!, $authorId:ID, $cursor:String){
+            repository(owner:$owner, name:$name){
+              defaultBranchRef{
+                target{
+                  ... on Commit{
+                    history(first:${PAGE}, after:$cursor, author:{id:$authorId}){
+                      pageInfo{ hasNextPage endCursor }
+                      nodes{ committedDate }
+                    }
                   }
                 }
               }
             }
-          }
-        }`,
-        { owner, name, authorId: viewerId }
-      );
-      const nodes = data.repository?.defaultBranchRef?.target?.history?.nodes || [];
-      for (const n of nodes) {
-        const h = localDate(n.committedDate).getUTCHours();
-        hours[h]++;
+          }`,
+          { owner, name, authorId: viewerId, cursor }
+        );
+        const history = data.repository?.defaultBranchRef?.target?.history;
+        const nodes = history?.nodes || [];
+        for (const n of nodes) {
+          const h = localDate(n.committedDate).getUTCHours();
+          hours[h]++;
+        }
+        fetched += nodes.length;
+        if (!history?.pageInfo?.hasNextPage || nodes.length === 0) break;
+        cursor = history.pageInfo.endCursor;
       }
     } catch {
       // skip repos we can't read (deleted, renamed, no access, etc.)
@@ -199,15 +210,26 @@ async function getRepoLanguages() {
     `query($login:String!){
       user(login:$login){
         repositories(first:100, ownerAffiliations:OWNER, isFork:false){
-          nodes{ nameWithOwner primaryLanguage{ name } }
+          nodes{
+            nameWithOwner
+            primaryLanguage{ name }
+            languages(first:10, orderBy:{field:SIZE, direction:DESC}){ edges{ size node{ name } } }
+          }
         }
       }
     }`,
     { login: USER }
   );
-  const map = new Map(); // nameWithOwner -> language name
+  const map = new Map(); // nameWithOwner -> effective language name
   for (const repo of data.user.repositories.nodes) {
-    if (repo.primaryLanguage) map.set(repo.nameWithOwner, repo.primaryLanguage.name);
+    const edges = repo.languages?.edges || [];
+    // GitHub's byte-count "primary language" misattributes Flutter/Dart projects to
+    // whichever native platform embedder (C++/CMake) happens to be bigger in bytes,
+    // even though that scaffolding is auto-generated and never hand-written. Any repo
+    // with Dart in it is, for a developer's actual purposes, a Dart project.
+    const hasDart = edges.some(e => e.node.name === 'Dart');
+    const effective = hasDart ? 'Dart' : (edges[0]?.node.name || repo.primaryLanguage?.name);
+    if (effective) map.set(repo.nameWithOwner, effective);
   }
   return map;
 }
@@ -229,6 +251,21 @@ function renderSVG(d) {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const card = (x, y, w, h, stroke = C.stroke, sw = 1) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="url(#cardG)" stroke="${stroke}" stroke-width="${sw}"/>`;
   const t = (x, y, s, size, fill, weight = 500, anchor = 'start', extra = '') => `<text x="${x}" y="${y}" ${F} font-size="${size}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}" ${extra}>${esc(s)}</text>`;
+  // streak flame icon (Heroicons "fire" path, visible glyph ~20 units tall in its 24x24 box)
+  const FLAME_PATH = 'M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z';
+  const flame = (x, y, h, fill = 'url(#fireG)') => {
+    const s = h / 20;
+    return `<path d="${FLAME_PATH}" fill="${fill}" transform="translate(${(x - 2 * s).toFixed(1)},${(y - 2 * s).toFixed(1)}) scale(${s.toFixed(3)})"/>`;
+  };
+  // "on a streak" rocket icon (Heroicons "rocket-launch"), body + exhaust trail as separate
+  // sub-paths so each can be colored like a real rocket: red body, orange exhaust.
+  const ROCKET_BODY = 'M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z';
+  const ROCKET_TRAIL = 'M5.26 17.242a.75.75 0 1 0-.897-1.203 5.243 5.243 0 0 0-2.05 5.022.75.75 0 0 0 .625.627 5.243 5.243 0 0 0 5.022-2.051.75.75 0 1 0-1.202-.897 3.744 3.744 0 0 1-3.008 1.51c0-1.23.592-2.323 1.51-3.008Z';
+  const rocket = (x, y, h, bodyFill = '#FF4D4D', trailFill = '#FFA23D') => {
+    const s = h / 21;
+    const tr = `translate(${(x - 1.5 * s).toFixed(1)},${(y - 1.5 * s).toFixed(1)}) scale(${s.toFixed(3)})`;
+    return `<path d="${ROCKET_BODY}" fill="${bodyFill}" transform="${tr}"/><path d="${ROCKET_TRAIL}" fill="${trailFill}" transform="${tr}"/>`;
+  };
   let o = '';
 
   o += t(32, 58, 'GitHub stats', 24, C.text, 700);
@@ -247,23 +284,27 @@ function renderSVG(d) {
   o += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.grid}" stroke-width="9"/>`;
   o += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="url(#ringG)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${(circ * frac).toFixed(1)} ${circ.toFixed(1)}" transform="rotate(-90 ${cx} ${cy})"/>`;
   o += `<circle cx="${cx}" cy="${cy - r}" r="4" fill="${C.text}"/>`;
-  o += t(cx, cy + 9, d.current, 30, C.text, 700, 'middle');
+  o += t(cx, cy + 9, d.current, 30, 'url(#fireG)', 700, 'middle');
   o += t(cx, cy + 26, 'days', 11, C.muted, 500, 'middle');
-  o += t(470, 162, 'Current streak', 17, C.text, 700);
+  o += flame(468, 146, 20);
+  o += t(494, 162, 'Current streak', 17, C.text, 700);
   o += t(470, 186, d.currentRange, 12, C.cyan, 600);
   o += t(470, 208, d.current && d.current >= d.longest ? 'Matches the longest streak' : `Longest is ${d.longest} days`, 12, C.muted);
 
   // Longest streak
   o += card(688, 104, 280, 150);
-  o += t(712, 138, 'Longest streak', 14, C.muted);
-  o += t(712, 206, d.longest, 58, C.text, 700, 'start', 'letter-spacing="-1.5"');
+  o += flame(710, 125, 17);
+  o += t(733, 138, 'Longest streak', 14, C.muted);
+  o += t(712, 206, d.longest, 58, 'url(#fireG)', 700, 'start', 'letter-spacing="-1.5"');
   o += t(788, 206, 'days', 18, C.muted);
+  o += rocket(837, 187, 23);
   o += t(712, 234, d.longestRange, 12, C.cyan, 600);
 
   // Commits by hour
   o += card(32, 270, 936, 210);
   o += t(56, 302, 'Commits by hour', 15, C.text, 700);
-  o += t(944, 302, `UTC${OFFSET >= 0 ? '+' : ''}${OFFSET}`, 12, C.muted, 500, 'end');
+  o += t(944, 302, `Hour of day → (UTC${OFFSET >= 0 ? '+' : ''}${OFFSET})`, 12, C.muted, 500, 'end');
+  o += t(56, 320, 'Commits ↑', 10, C.muted, 600);
 
   const maxVal = Math.max(1, ...d.hours);
   const niceMax = (() => {
@@ -296,9 +337,14 @@ function renderSVG(d) {
   d.hours.forEach((v, h) => {
     const x = hourX(h);
     const barH = Math.max(3, v * scale);
+    const barTop = 452 - barH;
     const isPeak = h >= peakStart && h < peakStart + 3;
-    o += `<rect x="${x}" y="${(452 - barH).toFixed(1)}" width="20" height="${barH.toFixed(1)}" rx="4" fill="url(#${isPeak ? 'peakG' : 'barG'})"/>`;
-    if (h % 3 === 0) o += t(x + 10, 470, String(h).padStart(2, '0'), 10, C.muted, 500, 'middle');
+    o += `<rect x="${x}" y="${barTop.toFixed(1)}" width="20" height="${barH.toFixed(1)}" rx="4" fill="url(#${isPeak ? 'peakG' : 'barG'})"/>`;
+    if (v > 0) {
+      const labelY = Math.max(328, barTop - 6);
+      o += t(x + 10, labelY, v, 9, isPeak ? C.cyan : C.muted, 600, 'middle');
+    }
+    o += t(x + 10, 470, String(h).padStart(2, '0'), 8.5, C.muted, 500, 'middle');
   });
 
   // Language cards
@@ -345,6 +391,7 @@ function renderSVG(d) {
 <linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B9BE8"/><stop offset="1" stop-color="#1E4F8F"/></linearGradient>
 <linearGradient id="peakG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#378ADD"/></linearGradient>
 <linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="0.5" stop-color="#378ADD"/><stop offset="1" stop-color="#85B7EB"/></linearGradient>
+<linearGradient id="fireG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB020"/><stop offset="1" stop-color="#FF4D4D"/></linearGradient>
 </defs>
 <rect width="1000" height="728" rx="20" fill="url(#bgG)"/>
 <rect width="1000" height="728" rx="20" fill="url(#glow)"/>
