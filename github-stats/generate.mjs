@@ -74,7 +74,6 @@ async function getContributionCalendarYears(createdAt) {
 async function getContributionData(years) {
   let total = 0;
   const days = []; // { date: 'YYYY-MM-DD', count }
-  const repoCommitCounts = new Map(); // nameWithOwner -> commit count
 
   for (const range of years) {
     const data = await gql(
@@ -84,10 +83,6 @@ async function getContributionData(years) {
             contributionCalendar{
               totalContributions
               weeks{ contributionDays{ date contributionCount } }
-            }
-            commitContributionsByRepository(maxRepositories:100){
-              repository{ nameWithOwner isFork }
-              contributions{ totalCount }
             }
           }
         }
@@ -101,15 +96,37 @@ async function getContributionData(years) {
         days.push({ date: d.date, count: d.contributionCount });
       }
     }
-    for (const repo of cc.commitContributionsByRepository) {
-      if (repo.repository.isFork) continue;
-      const key = repo.repository.nameWithOwner;
-      repoCommitCounts.set(key, (repoCommitCounts.get(key) || 0) + repo.contributions.totalCount);
-    }
   }
 
   days.sort((a, b) => (a.date < b.date ? -1 : 1));
-  return { total, days, repoCommitCounts };
+  return { total, days };
+}
+
+// Repo discovery via commitContributionsByRepository under contributionsCollection is
+// subject to GitHub's "restricted contributions" gate and silently omits private-org
+// repos even when the account's own privacy setting allows showing them. This direct
+// connection is not gated the same way and reliably includes every repo, private or not.
+async function getContributedRepoNames(viewerId) {
+  const names = new Set();
+  let cursor = null;
+  for (let i = 0; i < 5; i++) { // safety cap: 5 pages * 100 = 500 repos
+    const data = await gql(
+      `query($login:String!, $cursor:String){
+        user(login:$login){
+          repositoriesContributedTo(first:100, after:$cursor, contributionTypes:[COMMIT], includeUserRepositories:true, isLocked:false){
+            pageInfo{ hasNextPage endCursor }
+            nodes{ nameWithOwner isFork }
+          }
+        }
+      }`,
+      { login: USER, cursor }
+    );
+    const conn = data.user.repositoriesContributedTo;
+    for (const r of conn.nodes) if (!r.isFork) names.add(r.nameWithOwner);
+    if (!conn.pageInfo.hasNextPage) break;
+    cursor = conn.pageInfo.endCursor;
+  }
+  return [...names];
 }
 
 // ---------- 2. streaks ----------
@@ -162,6 +179,7 @@ function computeStreaks(days) {
 // ---------- 3. commits by hour ----------
 async function getCommitHours(viewerId, repoNames) {
   const hours = new Array(24).fill(0);
+  const repoCommitCounts = new Map(); // nameWithOwner -> real commit count (for language weighting)
   const PAGE = 100;
   const MAX_PER_REPO = 500; // safety cap so one huge repo can't blow the run time/rate limit
   for (const nameWithOwner of repoNames) {
@@ -194,6 +212,7 @@ async function getCommitHours(viewerId, repoNames) {
           hours[h]++;
         }
         fetched += nodes.length;
+        if (nodes.length > 0) repoCommitCounts.set(nameWithOwner, (repoCommitCounts.get(nameWithOwner) || 0) + nodes.length);
         if (!history?.pageInfo?.hasNextPage || nodes.length === 0) break;
         cursor = history.pageInfo.endCursor;
       }
@@ -201,35 +220,40 @@ async function getCommitHours(viewerId, repoNames) {
       // skip repos we can't read (deleted, renamed, no access, etc.)
     }
   }
-  return hours;
+  return { hours, repoCommitCounts };
 }
 
 // ---------- 4. languages ----------
-async function getRepoLanguages() {
-  const data = await gql(
-    `query($login:String!){
-      user(login:$login){
-        repositories(first:100, ownerAffiliations:OWNER, isFork:false){
-          nodes{
-            nameWithOwner
+// Queries language breakdowns for an explicit list of repos (owned, org-owned, or
+// collaborator repos alike) rather than only repos the account owns, so work done
+// in organization repositories (e.g. a private employer repo) is represented too.
+async function getLanguagesForRepos(repoNames) {
+  const map = new Map(); // nameWithOwner -> effective language name
+  for (const nameWithOwner of repoNames) {
+    const [owner, name] = nameWithOwner.split('/');
+    try {
+      const data = await gql(
+        `query($owner:String!, $name:String!){
+          repository(owner:$owner, name:$name){
             primaryLanguage{ name }
             languages(first:10, orderBy:{field:SIZE, direction:DESC}){ edges{ size node{ name } } }
           }
-        }
-      }
-    }`,
-    { login: USER }
-  );
-  const map = new Map(); // nameWithOwner -> effective language name
-  for (const repo of data.user.repositories.nodes) {
-    const edges = repo.languages?.edges || [];
-    // GitHub's byte-count "primary language" misattributes Flutter/Dart projects to
-    // whichever native platform embedder (C++/CMake) happens to be bigger in bytes,
-    // even though that scaffolding is auto-generated and never hand-written. Any repo
-    // with Dart in it is, for a developer's actual purposes, a Dart project.
-    const hasDart = edges.some(e => e.node.name === 'Dart');
-    const effective = hasDart ? 'Dart' : (edges[0]?.node.name || repo.primaryLanguage?.name);
-    if (effective) map.set(repo.nameWithOwner, effective);
+        }`,
+        { owner, name }
+      );
+      const repo = data.repository;
+      if (!repo) continue;
+      const edges = repo.languages?.edges || [];
+      // GitHub's byte-count "primary language" misattributes Flutter/Dart projects to
+      // whichever native platform embedder (C++/CMake) happens to be bigger in bytes,
+      // even though that scaffolding is auto-generated and never hand-written. Any repo
+      // with Dart in it is, for a developer's actual purposes, a Dart project.
+      const hasDart = edges.some(e => e.node.name === 'Dart');
+      const effective = hasDart ? 'Dart' : (edges[0]?.node.name || repo.primaryLanguage?.name);
+      if (effective) map.set(nameWithOwner, effective);
+    } catch {
+      // skip repos we can't read
+    }
   }
   return map;
 }
@@ -405,13 +429,13 @@ ${o}
 async function main() {
   const user = await getUserMeta();
   const years = await getContributionCalendarYears(user.createdAt);
-  const { total, days, repoCommitCounts } = await getContributionData(years);
+  const { total, days } = await getContributionData(years);
   const streaks = computeStreaks(days);
 
-  const repoNames = [...repoCommitCounts.keys()];
-  const hours = await getCommitHours(user.id, repoNames);
+  const repoNames = await getContributedRepoNames(user.id);
+  const { hours, repoCommitCounts } = await getCommitHours(user.id, repoNames);
 
-  const repoLangs = await getRepoLanguages();
+  const repoLangs = await getLanguagesForRepos(repoNames);
 
   const byRepoCounts = new Map();
   for (const lang of repoLangs.values()) {
