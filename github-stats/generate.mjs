@@ -17,20 +17,34 @@ if (!TOKEN) {
 }
 
 // ---------- GraphQL helper ----------
-async function gql(query, variables) {
-  const r = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      Authorization: `bearer ${TOKEN}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ query, variables }),
-  });
-  const json = await r.json();
-  if (json.errors) {
-    throw new Error('GraphQL error: ' + JSON.stringify(json.errors));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function gql(query, variables, retries = 2) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      const r = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
+        headers: {
+          Authorization: `bearer ${TOKEN}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query, variables }),
+      });
+      const json = await r.json();
+      if (json.errors) {
+        throw new Error('GraphQL error: ' + JSON.stringify(json.errors));
+      }
+      return json.data;
+    } catch (err) {
+      // Only retry transient network-level failures (timeouts, resets), not real
+      // GraphQL errors, which mean the query itself is wrong and won't succeed
+      // on retry. We hit this exact kind of transient failure once already while
+      // testing this script, which is why it's worth guarding against here.
+      const transient = err instanceof TypeError || /ETIMEDOUT|ECONNRESET|fetch failed/i.test(err.message || '');
+      if (!transient || attempt >= retries) throw err;
+      await sleep(1000 * (attempt + 1));
+    }
   }
-  return json.data;
 }
 
 // ---------- date helpers ----------
@@ -133,7 +147,6 @@ async function getContributedRepoNames(viewerId) {
 function computeStreaks(days) {
   let longest = 0, longestStart = null, longestEnd = null;
   let run = 0, runStart = null;
-  let prevDate = null;
 
   for (const { date, count } of days) {
     if (count > 0) {
@@ -147,7 +160,6 @@ function computeStreaks(days) {
     } else {
       run = 0;
     }
-    prevDate = date;
   }
 
   // current streak: walk backward from the end; a zero-count *today* doesn't
@@ -221,6 +233,91 @@ async function getCommitHours(viewerId, repoNames) {
     }
   }
   return { hours, repoCommitCounts };
+}
+
+// Pull requests the user has opened, bucketed by hour. A direct top-level User
+// connection, not gated by the "restricted contributions" visibility rule.
+async function getPullRequestsByHour() {
+  const hours = new Array(24).fill(0);
+  let cursor = null;
+  for (let i = 0; i < 10; i++) { // safety cap: 10 pages * 100 = 1000 PRs
+    const data = await gql(
+      `query($login:String!, $cursor:String){
+        user(login:$login){
+          pullRequests(first:100, after:$cursor, orderBy:{field:CREATED_AT, direction:DESC}){
+            pageInfo{ hasNextPage endCursor }
+            nodes{ createdAt }
+          }
+        }
+      }`,
+      { login: USER, cursor }
+    );
+    const conn = data.user.pullRequests;
+    for (const n of conn.nodes) hours[localDate(n.createdAt).getUTCHours()]++;
+    if (!conn.pageInfo.hasNextPage) break;
+    cursor = conn.pageInfo.endCursor;
+  }
+  return hours;
+}
+
+// Issues the user has opened, bucketed by hour. Same direct, unrestricted pattern.
+async function getIssuesByHour() {
+  const hours = new Array(24).fill(0);
+  let cursor = null;
+  for (let i = 0; i < 10; i++) {
+    const data = await gql(
+      `query($login:String!, $cursor:String){
+        user(login:$login){
+          issues(first:100, after:$cursor, orderBy:{field:CREATED_AT, direction:DESC}){
+            pageInfo{ hasNextPage endCursor }
+            nodes{ createdAt }
+          }
+        }
+      }`,
+      { login: USER, cursor }
+    );
+    const conn = data.user.issues;
+    for (const n of conn.nodes) hours[localDate(n.createdAt).getUTCHours()]++;
+    if (!conn.pageInfo.hasNextPage) break;
+    cursor = conn.pageInfo.endCursor;
+  }
+  return hours;
+}
+
+// Reviews the user has submitted, bucketed by hour. There's no direct "my reviews"
+// connection on User, so this finds every PR the user has reviewed via search, then
+// reads that PR's own review list and keeps only the ones this user actually wrote
+// (a PR can have reviews from many people, and more than one review from the same
+// person over time).
+async function getReviewsByHour() {
+  const hours = new Array(24).fill(0);
+  let cursor = null;
+  for (let page = 0; page < 10; page++) { // safety cap: 10 pages * 100 = 1000 reviewed PRs
+    const data = await gql(
+      `query($q:String!, $cursor:String){
+        search(query:$q, type:ISSUE, first:100, after:$cursor){
+          pageInfo{ hasNextPage endCursor }
+          nodes{
+            ... on PullRequest{
+              reviews(first:50){ nodes{ author{ login } submittedAt } }
+            }
+          }
+        }
+      }`,
+      { q: `is:pr reviewed-by:${USER}`, cursor }
+    );
+    const conn = data.search;
+    for (const pr of conn.nodes) {
+      for (const review of pr.reviews?.nodes || []) {
+        if (review.author?.login === USER && review.submittedAt) {
+          hours[localDate(review.submittedAt).getUTCHours()]++;
+        }
+      }
+    }
+    if (!conn.pageInfo.hasNextPage) break;
+    cursor = conn.pageInfo.endCursor;
+  }
+  return hours;
 }
 
 // ---------- 4. languages ----------
@@ -324,13 +421,27 @@ function renderSVG(d) {
   o += rocket(837, 187, 23);
   o += t(712, 234, d.longestRange, 12, C.cyan, 600);
 
-  // Commits by hour
-  o += card(32, 270, 936, 210);
-  o += t(56, 302, 'Commits by hour', 15, C.text, 700);
-  o += t(944, 302, `Hour of day → (UTC${OFFSET >= 0 ? '+' : ''}${OFFSET})`, 12, C.muted, 500, 'end');
-  o += t(56, 320, 'Commits ↑', 10, C.muted, 600);
+  // Activity by hour: commits, PRs, reviews and issues stacked per hour
+  const SERIES = [
+    { key: 'commits', label: 'Commits', color: C.accent },   // #378ADD — the dashboard's anchor blue
+    { key: 'prs', label: 'PRs', color: '#FFB020' },          // warm gold — echoes the streak flame/rocket
+    { key: 'reviews', label: 'Reviews', color: '#2DD4BF' },  // teal — reads as "checked/approved"
+    { key: 'issues', label: 'Issues', color: '#A78BFA' },    // violet — clearly distinct from the above three
+  ];
+  const totals = d.activity.commits.map((_, h) => SERIES.reduce((sum, s) => sum + d.activity[s.key][h], 0));
 
-  const maxVal = Math.max(1, ...d.hours);
+  o += card(32, 270, 936, 210);
+  o += t(56, 302, 'Activity by hour', 15, C.text, 700);
+  o += t(944, 302, `Hour of day → (UTC${OFFSET >= 0 ? '+' : ''}${OFFSET})`, 12, C.muted, 500, 'end');
+  o += t(56, 320, 'Activity ↑', 10, C.muted, 600);
+  let legendX = 150;
+  for (const s of SERIES) {
+    o += `<circle cx="${legendX}" cy="317" r="3.5" fill="${s.color}"/>`;
+    o += t(legendX + 10, 320, s.label, 9.5, C.muted, 600);
+    legendX += 18 + s.label.length * 6.2 + 20;
+  }
+
+  const maxVal = Math.max(1, ...totals);
   const niceMax = (() => {
     const raw = maxVal;
     const mag = Math.pow(10, Math.floor(Math.log10(Math.max(raw, 1))));
@@ -346,10 +457,10 @@ function renderSVG(d) {
     o += t(70, y + 4, Math.round(gridVals[i]), 10, C.muted, 500, 'end');
   });
 
-  // best 3-consecutive-hour window
+  // best 3-consecutive-hour window, by combined activity
   let peakStart = 0, peakSum = -1;
   for (let h = 0; h <= 21; h++) {
-    const sum = d.hours[h] + d.hours[h + 1] + d.hours[h + 2];
+    const sum = totals[h] + totals[h + 1] + totals[h + 2];
     if (sum > peakSum) { peakSum = sum; peakStart = h; }
   }
   const hourX = h => 88 + h * 36;
@@ -358,18 +469,28 @@ function renderSVG(d) {
   o += `<rect x="${boxX}" y="318" width="${boxW}" height="138" rx="8" fill="${C.cyan}" fill-opacity="0.07" stroke="${C.cyan}" stroke-opacity="0.25"/>`;
   o += t(boxX + boxW / 2, 332, 'Peak hours', 11, C.cyan, 600, 'middle');
 
-  d.hours.forEach((v, h) => {
+  for (let h = 0; h < 24; h++) {
     const x = hourX(h);
-    const barH = Math.max(3, v * scale);
-    const barTop = 452 - barH;
-    const isPeak = h >= peakStart && h < peakStart + 3;
-    o += `<rect x="${x}" y="${barTop.toFixed(1)}" width="20" height="${barH.toFixed(1)}" rx="4" fill="url(#${isPeak ? 'peakG' : 'barG'})"/>`;
-    if (v > 0) {
-      const labelY = Math.max(328, barTop - 6);
-      o += t(x + 10, labelY, v, 9, isPeak ? C.cyan : C.muted, 600, 'middle');
+    if (totals[h] === 0) {
+      o += `<rect x="${x}" y="449" width="20" height="3" rx="4" fill="${C.grid}"/>`;
+    } else {
+      const present = SERIES.filter(s => d.activity[s.key][h] > 0);
+      let yCursor = 452;
+      present.forEach((s, i) => {
+        const v = d.activity[s.key][h];
+        const segH = Math.max(1.5, v * scale);
+        yCursor -= segH;
+        const isTop = i === present.length - 1;
+        o += `<rect x="${x}" y="${yCursor.toFixed(1)}" width="20" height="${segH.toFixed(1)}" rx="${isTop ? 4 : 0}" fill="${s.color}"/>`;
+      });
+    }
+    if (totals[h] > 0) {
+      const labelY = Math.max(328, 452 - totals[h] * scale - 6);
+      const isPeak = h >= peakStart && h < peakStart + 3;
+      o += t(x + 10, labelY, totals[h], 9, isPeak ? C.cyan : C.muted, 600, 'middle');
     }
     o += t(x + 10, 470, String(h).padStart(2, '0'), 8.5, C.muted, 500, 'middle');
-  });
+  }
 
   // Language cards
   const donut = (list, cx, cy, r2, sw) => {
@@ -412,8 +533,6 @@ function renderSVG(d) {
 <radialGradient id="glow" cx="0.15" cy="0" r="0.8"><stop offset="0" stop-color="#185FA5" stop-opacity="0.35"/><stop offset="1" stop-color="#185FA5" stop-opacity="0"/></radialGradient>
 <radialGradient id="glow2" cx="1" cy="1" r="0.6"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.12"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
 <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2546" stop-opacity="0.9"/><stop offset="1" stop-color="#081A33" stop-opacity="0.9"/></linearGradient>
-<linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B9BE8"/><stop offset="1" stop-color="#1E4F8F"/></linearGradient>
-<linearGradient id="peakG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#378ADD"/></linearGradient>
 <linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="0.5" stop-color="#378ADD"/><stop offset="1" stop-color="#85B7EB"/></linearGradient>
 <linearGradient id="fireG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB020"/><stop offset="1" stop-color="#FF4D4D"/></linearGradient>
 </defs>
@@ -433,7 +552,26 @@ async function main() {
   const streaks = computeStreaks(days);
 
   const repoNames = await getContributedRepoNames(user.id);
-  const { hours, repoCommitCounts } = await getCommitHours(user.id, repoNames);
+  const { hours: commitHours, repoCommitCounts } = await getCommitHours(user.id, repoNames);
+  // These three are enhancements, not core data — if one fails even after gql()'s
+  // own retries (a real outage, not a blip), that series renders as all-zero rather
+  // than taking down the whole dashboard. Commits, streaks and total contributions
+  // are the load-bearing numbers and are allowed to fail the run if they can't be
+  // fetched, since the dashboard would be meaningless without them anyway.
+  const safely = async (label, promise) => {
+    try {
+      return await promise;
+    } catch (err) {
+      console.error(`Warning: ${label} failed, showing as zero for this run:`, err.message || err);
+      return new Array(24).fill(0);
+    }
+  };
+  const [prHours, issueHours, reviewHours] = await Promise.all([
+    safely('pull requests by hour', getPullRequestsByHour()),
+    safely('issues by hour', getIssuesByHour()),
+    safely('reviews by hour', getReviewsByHour()),
+  ]);
+  const activity = { commits: commitHours, prs: prHours, reviews: reviewHours, issues: issueHours };
 
   const repoLangs = await getLanguagesForRepos(repoNames);
 
@@ -457,7 +595,7 @@ async function main() {
     currentRange: streaks.currentRange,
     longest: streaks.longest,
     longestRange: streaks.longestRange,
-    hours,
+    activity,
     langsByRepo: topLanguages(byRepoCounts, 5),
     langsByCommit: topLanguages(byCommitCounts, 5),
   };
