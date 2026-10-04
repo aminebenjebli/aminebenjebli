@@ -1,8 +1,13 @@
 name: GitHub stats dashboard
 
 on:
+  # GitHub Actions can't watch activity in other repos (e.g. a private employer repo)
+  # directly, only pushes to *this* repo. Running every 15 minutes instead of once a
+  # day is the practical equivalent: within 15 minutes of a commit anywhere on the
+  # account, the next run picks it up. This repo is public, so Actions minutes are
+  # unlimited and this costs nothing.
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
