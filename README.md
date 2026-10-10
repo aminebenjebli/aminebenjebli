@@ -116,7 +116,7 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 ## Let's connect &nbsp;<sub><code>$ ssh connect@aminebenjebli</code></sub>
 
-Junior by title, owner by habit. I ship end to end, mentor teammates and step up when a feature needs someone to drive it. My goal is to grow into a Team Lead role, and I'm ready to take on that responsibility. Always open to talk mobile architecture, SaaS platforms and DevOps.
+Junior by title, owner by habit. I ship end to end, mentor teammates and step up when a feature needs someone to drive it. I'm not there yet, but I'm putting in the work to earn it, growing into a Senior Engineer and eventually leading a team. Always open to talk mobile architecture, SaaS platforms and DevOps.
 
 <div align="center">
 
