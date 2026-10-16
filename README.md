@@ -41,9 +41,9 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 <br/>
 
-## What I'm building &nbsp;<sub><code>$ cat current-focus.md</code></sub>
+## What I'm building, and how &nbsp;<sub><code>$ cat engineering.md</code></sub>
 
-<img src="./assets/focus-cards.svg" width="100%" alt="Mobile SaaS, Web Platform, DevOps & Delivery, AI Features" />
+<img src="./assets/building-and-how.svg" width="100%" alt="What I'm building: Mobile SaaS, Web Platform, DevOps & Delivery, AI Features — and how: Domain-Driven Design, Enforced boundaries, Decision records, Multi-tenant & real-time at scale" />
 
 <br/>
 
