@@ -32,6 +32,8 @@ Software Engineer at **[Spark Talent Alliance](https://sparktalentalliance.com)*
 
 I own features from the first wireframe to production, with a strong focus on clean architecture, developer experience and reliable releases.
 
+**Now** &nbsp;·&nbsp; building multi-platform SaaS at Spark Talent Alliance &nbsp;·&nbsp; learning Kafka and Kubernetes
+
 <table>
 <tr><td width="170"><b>Mobile</b></td><td>Flutter for cross-platform, Kotlin and Swift for native Android / iOS</td></tr>
 <tr><td><b>Web & Backend</b></td><td>Next.js front ends, NestJS APIs, PostgreSQL / MongoDB</td></tr>
@@ -41,62 +43,27 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 <br/>
 
+## Journey &nbsp;<sub><code>$ cat journey.log</code></sub>
+
+<img src="./assets/journey.svg" width="100%" alt="Journey: 2024 university hackathon, 2026 final-year internship at Ingenius IT, 2026 Software Engineering degree from ESPRIT, 2026 to now Software Engineer at Spark Talent Alliance" />
+
+<br/>
+
 ## What I'm building, and how &nbsp;<sub><code>$ cat engineering.md</code></sub>
 
 <img src="./assets/building-and-how.svg" width="100%" alt="What I'm building: Mobile SaaS, Web Platform, DevOps & Delivery, AI Features — and how: Domain-Driven Design, Enforced boundaries, Decision records, Multi-tenant & real-time at scale" />
 
 <br/>
 
+## How I approach system design &nbsp;<sub><code>$ cat design.md</code></sub>
+
+<img src="./assets/system-design.svg" width="100%" alt="System design layers: clients, edge, services, async and data, with observability, security and delivery across every layer" />
+
+<br/>
+
 ## Tech stack &nbsp;<sub><code>$ cat tech-stack.yaml</code></sub>
 
-<table>
-  <tr>
-    <td><b>Mobile</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-      <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-      <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Web & Backend</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-      <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white" alt="Odoo" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>DevOps & Cloud</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-      <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-      <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger" />
-      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Databases</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-      <img src="https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firestore" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Design & Tooling</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-      <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" alt="Photoshop" />
-      <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
-      <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
-    </td>
-  </tr>
-</table>
+<img src="./assets/tech-stack.svg" width="100%" alt="Tech stack. Daily: Flutter, TypeScript, NestJS, Next.js, Vite, Astro, Tailwind CSS, Three.js, PostgreSQL, Redis, Socket.IO, Node.js, Docker, Nginx, GitHub Actions, Sentry, Grafana, Prometheus. Comfortable: Kotlin, Swift, MongoDB, Firebase, Vue.js, GSAP, Playwright, Figma. Exploring: AI-augmented development, microservices, Kafka, Grafana Loki, Kubernetes, Terraform, OpenAI API." />
 
 <br/>
 
@@ -124,7 +91,7 @@ Junior by title, owner by habit. I ship end to end, mentor teammates and step up
 &nbsp;
 [![Email](https://img.shields.io/badge/Email-aminebenjebli%40gmail.com-185FA5?style=for-the-badge&logo=gmail&logoColor=white&labelColor=042C53)](mailto:aminebenjebli@gmail.com)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Coming%20Soon-378ADD?style=for-the-badge&logo=vercel&logoColor=white&labelColor=042C53)](#)
+<img src="https://img.shields.io/badge/Portfolio-Coming%20Soon-30363d?style=for-the-badge&logo=vercel&logoColor=6e7681&labelColor=21262d" alt="Portfolio: coming soon" />
 
 </div>
 
