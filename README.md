@@ -89,7 +89,7 @@ Junior by title, owner by habit. I ship end to end, mentor teammates and step up
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ben--jebli--amine-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=042C53)](https://linkedin.com/in/ben-jebli-amine)
 &nbsp;
-[![Email](https://img.shields.io/badge/Email-aminebenjebli%40gmail.com-185FA5?style=for-the-badge&logo=gmail&logoColor=white&labelColor=042C53)](mailto:aminebenjebli@gmail.com)
+[![Email](https://img.shields.io/badge/Email-m.amine%40sparktalentalliance.com-185FA5?style=for-the-badge&logo=gmail&logoColor=white&labelColor=042C53)](mailto:m.amine@sparktalentalliance.com)
 &nbsp;
 <img src="https://img.shields.io/badge/Portfolio-Coming%20Soon-30363d?style=for-the-badge&logo=vercel&logoColor=6e7681&labelColor=21262d" alt="Portfolio: coming soon" />
 
