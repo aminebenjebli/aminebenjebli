@@ -63,7 +63,7 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 ## Tech stack &nbsp;<sub><code>$ cat tech-stack.yaml</code></sub>
 
-<img src="./assets/tech-stack.svg" width="100%" alt="Tech stack. Daily: Flutter, TypeScript, NestJS, Next.js, Vite, Astro, Tailwind CSS, Three.js, PostgreSQL, Redis, Socket.IO, Node.js, Docker, Nginx, GitHub Actions, Sentry, Grafana, Prometheus. Comfortable: Kotlin, Swift, MongoDB, Firebase, Vue.js, GSAP, Playwright, Figma. Exploring: AI-augmented development, microservices, Kafka, Grafana Loki, Kubernetes, Terraform, OpenAI API." />
+<img src="./assets/tech-stack.svg" width="100%" alt="Tech stack. Daily: Flutter, TypeScript, NestJS, Next.js, PostgreSQL, Redis, Socket.IO, Docker, GitHub Actions, Sentry. Comfortable: Astro, Vite, Tailwind CSS, Three.js, Nginx, Grafana, Prometheus, Kotlin, Swift, MongoDB, Firebase, Vue.js, GSAP, Playwright, Figma. Exploring: AI-augmented development, microservices, Kafka, Grafana Loki, Kubernetes, Terraform, OpenAI API." />
 
 <br/>
 
@@ -83,7 +83,9 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 ## Let's connect &nbsp;<sub><code>$ ssh connect@aminebenjebli</code></sub>
 
-Junior by title, owner by habit. I ship end to end, mentor teammates and step up when a feature needs someone to drive it. I'm not there yet, but I'm putting in the work to earn it, growing into a Senior Engineer and eventually leading a team. Always open to talk mobile architecture, SaaS platforms and DevOps.
+Junior by title, owner by habit. I ship end to end, mentor teammates and step up when a feature needs someone to drive it. I'm not there yet, but I'm putting in the work to earn it, growing into a Senior Engineer and eventually leading a team.
+
+**Open to** &nbsp;·&nbsp; conversations about mobile architecture, SaaS platforms and DevOps &nbsp;·&nbsp; code review swaps &nbsp;·&nbsp; open-source collaboration
 
 <div align="center">
 
