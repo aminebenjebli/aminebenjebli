@@ -34,8 +34,6 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 **Now** &nbsp;·&nbsp; building multi-platform SaaS at Spark Talent Alliance &nbsp;·&nbsp; learning Kafka and Kubernetes
 
-<a href="https://dev.to/aminebenjebli/keeping-real-time-clients-in-sync-after-they-reconnect-2l3p"><img src="./assets/post-realtime-sync.svg" width="100%" alt="Article on dev.to: Keeping real-time clients in sync after they reconnect. Read the post." /></a>
-
 <table>
 <tr><td width="170"><b>Mobile</b></td><td>Flutter for cross-platform, Kotlin and Swift for native Android / iOS</td></tr>
 <tr><td><b>Web & Backend</b></td><td>Next.js front ends, NestJS APIs, PostgreSQL / MongoDB</td></tr>
@@ -60,6 +58,12 @@ I own features from the first wireframe to production, with a strong focus on cl
 ## How I approach system design &nbsp;<sub><code>$ cat design.md</code></sub>
 
 <img src="./assets/system-design.svg" width="100%" alt="System design layers: clients, edge, services, async and data, with observability, security and delivery across every layer" />
+
+<br/>
+
+## Writing &nbsp;<sub><code>$ ls posts/</code></sub>
+
+<a href="https://dev.to/aminebenjebli/keeping-real-time-clients-in-sync-after-they-reconnect-2l3p"><img src="./assets/post-realtime-sync.svg" width="100%" alt="Article on dev.to: Keeping real-time clients in sync after they reconnect. Read the post." /></a>
 
 <br/>
 
