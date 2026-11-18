@@ -6,13 +6,17 @@
 
 <div align="center">
 
-<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/role-software%20engineer-185FA5?style=for-the-badge&labelColor=042C53" alt="Role" /></a>
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/role-software%20engineer-185FA5?style=for-the-badge&labelColor=042C53" alt="Role: Software Engineer" /></a>
 &nbsp;&nbsp;
-<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/@-spark%20talent%20alliance-0C447C?style=for-the-badge&labelColor=042C53" alt="Company" /></a>
+<a href="https://sparktalentalliance.com"><img src="https://img.shields.io/badge/-spark%20talent%20alliance-0C447C?style=for-the-badge&labelColor=042C53&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZD0nTTEyIDEuNSBDMTIuOSA4LjIgMTUuOCAxMS4xIDIyLjUgMTIgQzE1LjggMTIuOSAxMi45IDE1LjggMTIgMjIuNSBDMTEuMSAxNS44IDguMiAxMi45IDEuNSAxMiBDOC4yIDExLjEgMTEuMSA4LjIgMTIgMS41IFonIGZpbGw9JyNGRkQ4NEQnLz48L3N2Zz4%3D" alt="Spark Talent Alliance" /></a>
 &nbsp;&nbsp;
-<img src="https://img.shields.io/badge/focus-mobile%20%26%20web%20saas-378ADD?style=for-the-badge&logo=flutter&logoColor=E8F4FD&labelColor=042C53" alt="Focus" />
+<img src="https://img.shields.io/badge/focus-mobile%20%26%20web%20saas-378ADD?style=for-the-badge&logo=flutter&logoColor=E8F4FD&labelColor=042C53" alt="Focus: mobile and web SaaS" />
 &nbsp;&nbsp;
-<img src="https://img.shields.io/badge/based-tunisia-185FA5?style=for-the-badge&labelColor=042C53" alt="Location" />
+<img src="https://img.shields.io/badge/based-tunisia-185FA5?style=for-the-badge&labelColor=042C53&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMCAyMCc%2BPHJlY3Qgd2lkdGg9JzMwJyBoZWlnaHQ9JzIwJyByeD0nMicgZmlsbD0nI0U3MDAxMycvPjxjaXJjbGUgY3g9JzE1JyBjeT0nMTAnIHI9JzUuNScgZmlsbD0nI2ZmZicvPjxjaXJjbGUgY3g9JzE1JyBjeT0nMTAnIHI9JzQuMScgZmlsbD0nI0U3MDAxMycvPjxjaXJjbGUgY3g9JzE2LjEnIGN5PScxMCcgcj0nMy4zJyBmaWxsPScjZmZmJy8%2BPHBhdGggZD0nTTEzLjUwLDEwLjAwIEwxNS4xMyw5LjQ0IEwxNS4xNiw3LjcyIEwxNi4xOSw5LjEwIEwxNy44NCw4LjU5IEwxNi44NSwxMC4wMCBMMTcuODQsMTEuNDEgTDE2LjE5LDEwLjkwIEwxNS4xNiwxMi4yOCBMMTUuMTMsMTAuNTYgWicgZmlsbD0nI0U3MDAxMycvPjwvc3ZnPg%3D%3D" alt="Based in Tunisia" />
+&nbsp;&nbsp;
+<a href="https://wakatime.com/@5cf316bb-19cd-40cd-97e3-eb22d5353c78"><img src="https://wakatime.com/badge/user/5cf316bb-19cd-40cd-97e3-eb22d5353c78.svg?style=for-the-badge&color=185FA5&label_color=042C53&logo=wakatime" alt="Total time spent coding, tracked by WakaTime" /></a>
+&nbsp;&nbsp;
+<img src="https://hits.sh/github.com/aminebenjebli.svg?style=for-the-badge&label=PROFILE%20VIEWS&color=185FA5&labelColor=042C53&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCcgZmlsbD0nbm9uZScgc3Ryb2tlPScjRThGNEZEJyBzdHJva2Utd2lkdGg9JzInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc%2BPHBhdGggZD0nTTEuNSAxMlM1LjUgNC41IDEyIDQuNSAyMi41IDEyIDIyLjUgMTIgMTguNSAxOS41IDEyIDE5LjUgMS41IDEyIDEuNSAxMnonLz48Y2lyY2xlIGN4PScxMicgY3k9JzEyJyByPSczLjInLz48L3N2Zz4%3D" alt="Profile views" />
 
 </div>
 
@@ -77,10 +81,6 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 <div align="center">
   <img src="./github-stats/dashboard.svg" width="100%" alt="GitHub stats dashboard" />
-</div>
-
-<div align="center">
-  <a href="https://wakatime.com/@5cf316bb-19cd-40cd-97e3-eb22d5353c78"><img src="https://wakatime.com/badge/user/5cf316bb-19cd-40cd-97e3-eb22d5353c78.svg?style=for-the-badge&color=185FA5&label_color=042C53" alt="Total time spent coding, tracked by WakaTime" /></a>
 </div>
 
 <br/>
