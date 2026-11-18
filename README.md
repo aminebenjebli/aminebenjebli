@@ -98,5 +98,5 @@ Junior by title, owner by habit. I ship end to end, mentor teammates and step up
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=042C53,0C447C,185FA5&height=120&section=footer&text=Nothing%20ships%20if%20you%20don't%20commit.&fontSize=16&fontColor=85B7EB&fontAlignY=65&animation=fadeIn" alt="Footer" />
+<img src="./assets/footer.svg" width="100%" alt="Nothing ships if you don't commit. — Amine Ben Jebli" />
 </div>
