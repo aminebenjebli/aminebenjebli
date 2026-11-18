@@ -34,7 +34,7 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 **Now** &nbsp;·&nbsp; building multi-platform SaaS at Spark Talent Alliance &nbsp;·&nbsp; learning Kafka and Kubernetes
 
-**Writing** &nbsp;·&nbsp; [Keeping real-time clients in sync after they reconnect](https://dev.to/aminebenjebli/keeping-real-time-clients-in-sync-after-they-reconnect-2l3p) &nbsp;<sub>on dev.to</sub>
+<a href="https://dev.to/aminebenjebli/keeping-real-time-clients-in-sync-after-they-reconnect-2l3p"><img src="./assets/post-realtime-sync.svg" width="100%" alt="Article on dev.to: Keeping real-time clients in sync after they reconnect. Read the post." /></a>
 
 <table>
 <tr><td width="170"><b>Mobile</b></td><td>Flutter for cross-platform, Kotlin and Swift for native Android / iOS</td></tr>
