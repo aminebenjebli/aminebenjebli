@@ -34,6 +34,8 @@ I own features from the first wireframe to production, with a strong focus on cl
 
 **Now** &nbsp;·&nbsp; building multi-platform SaaS at Spark Talent Alliance &nbsp;·&nbsp; learning Kafka and Kubernetes
 
+**Writing** &nbsp;·&nbsp; [Keeping real-time clients in sync after they reconnect](https://dev.to/aminebenjebli/keeping-real-time-clients-in-sync-after-they-reconnect-2l3p) &nbsp;<sub>on dev.to</sub>
+
 <table>
 <tr><td width="170"><b>Mobile</b></td><td>Flutter for cross-platform, Kotlin and Swift for native Android / iOS</td></tr>
 <tr><td><b>Web & Backend</b></td><td>Next.js front ends, NestJS APIs, PostgreSQL / MongoDB</td></tr>
