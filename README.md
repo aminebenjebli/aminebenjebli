@@ -79,6 +79,10 @@ I own features from the first wireframe to production, with a strong focus on cl
   <img src="./github-stats/dashboard.svg" width="100%" alt="GitHub stats dashboard" />
 </div>
 
+<div align="center">
+  <a href="https://wakatime.com/@5cf316bb-19cd-40cd-97e3-eb22d5353c78"><img src="https://wakatime.com/badge/user/5cf316bb-19cd-40cd-97e3-eb22d5353c78.svg?style=for-the-badge&color=185FA5&label_color=042C53" alt="Total time spent coding, tracked by WakaTime" /></a>
+</div>
+
 <br/>
 
 <div align="center">
